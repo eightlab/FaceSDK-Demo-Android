@@ -84,8 +84,8 @@ class MainActivity : AppCompatActivity() {
      */
     private fun startFaceSdk(path: String) {
         FaceSdk.Builder()
-                .apiKey("paste_provided_apikey")
-                .imageUri(path)
+                .apiKey("paste_provided_license_key")
+                .imageUri(path) //Pass face photo file path
                 .voiceVerification(false) // True if voice verification is to be enabled
                 .build()
                 .start(this)
